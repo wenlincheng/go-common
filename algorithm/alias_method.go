@@ -3,9 +3,9 @@ package algorithm
 import (
 	"errors"
 	"fmt"
+	. "github.com/wenlincheng/go-common/collection"
 	"math/rand"
 	"time"
-	"wenlincheng/go-common/collection"
 )
 
 // 抽奖算法实现
@@ -30,8 +30,8 @@ func (a *AliasMethod) Initialize(prob []float64) error {
 	probtemp := make([]float64, a.length)
 
 	// 双向队列
-	small := collection.LinkedList{}
-	large := collection.LinkedList{}
+	small := LinkedList{}
+	large := LinkedList{}
 
 	for i := 0; i < a.length; i++ {
 		// 初始化 probtemp
