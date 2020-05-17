@@ -91,26 +91,3 @@ func (a *AliasMethod) Next() int {
 		return a.alias[column]
 	}
 }
-
-func main() {
-
-	//linkedList := LinkedList{}
-	//
-	//linkedList.Add(1)
-	//linkedList.Add(2)
-	//linkedList.Add(3)
-	//
-	//err, item := linkedList.GetLast()
-	//fmt.Println(item)
-	//
-	//fmt.Printf("%s 节点值：%v", err, item)
-
-	probability := []float64{0.5, 0.4, 0.05, 0.04, 0.007, 0.003}
-	str := []string{"1积分", "2积分", "3积分", "9积分", "19积分", "29积分"}
-	aliasMethod := AliasMethod{}
-	err := aliasMethod.Initialize(probability)
-	fmt.Print("Initialize", err)
-	for i := 0; i < 1000; i++ {
-		fmt.Println(str[aliasMethod.Next()])
-	}
-}
