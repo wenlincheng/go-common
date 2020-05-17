@@ -1,3 +1,3 @@
-module github.com/wenlincheng/go-util
+module github.com/wenlincheng/go-common
 
 go 1.13

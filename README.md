@@ -1,1 +1,1 @@
-# go-util
+# go-common
